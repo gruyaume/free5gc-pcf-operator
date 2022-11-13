@@ -6,7 +6,7 @@ operator allows for automated deployment and lifecycle operations.
 ## Usage
 
 ```bash
-juju deploy free5gc-pcf --trust
+juju deploy free5gc-pcf-operator --trust --channel=edge
 ```
 
 ## Relations
