@@ -13,13 +13,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: whatever
-        run: |
-          /usr/bin/sudo snap install charmcraft --classic --channel latest/stable
-          /usr/bin/sudo charmcraft pack --destructive-mode --verbose
-
-#        with:
-#          credentials: "${{ secrets.CHARMCRAFT_AUTH }}"
-#          github-token: "${{ secrets.GITHUB_TOKEN }}"
-#          channel: "edge"
-#          upload-image: "false"
+      - uses: canonical/charming-actions/upload-charm@2.0.0-rc
+        with:
+          credentials: "${{ secrets.CHARMCRAFT_AUTH }}"
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          channel: "edge"
+          upload-image: "false"
