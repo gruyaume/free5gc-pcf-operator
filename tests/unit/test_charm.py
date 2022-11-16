@@ -45,7 +45,7 @@ class TestCharm(unittest.TestCase):
             "services": {
                 "free5gc-pcf": {
                     "override": "replace",
-                    "command": "./pcf -c /free5gc/config/pcfcfg.yaml",
+                    "command": "pcf -c /free5gc/config/pcfcfg.yaml",
                     "startup": "enabled",
                     "environment": {"GIN_MODE": "release"},
                 }
