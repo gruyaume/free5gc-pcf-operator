@@ -1,6 +1,6 @@
 # free5gc-pcf-operator
 
-[Free5gc](https://www.free5gc.org/) is an open source 5G Core network implementation. This charmed
+[free5GC](https://www.free5gc.org/) is an open source 5G Core network implementation. This charmed
 operator allows for automated deployment and lifecycle operations.
 
 ## Usage
@@ -20,4 +20,4 @@ juju relate free5gc-pcf mongodb-k8s
 
 ## Image
 
-- **free5gc-pcf**: towards5gs/free5gc-pcf:v3.2.0
+- **[free5gc-pcf](https://github.com/gruyaume/free5gc-pcf-rock)**: ghcr.io/gruyaume/free5gc-pcf:1.1.1

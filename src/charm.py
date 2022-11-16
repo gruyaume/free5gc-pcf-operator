@@ -84,7 +84,7 @@ class Free5GcPcfOperatorCharm(CharmBase):
                     "free5gc-pcf": {
                         "override": "replace",
                         "startup": "enabled",
-                        "command": "./pcf -c /free5gc/config/pcfcfg.yaml",
+                        "command": "pcf -c /free5gc/config/pcfcfg.yaml",
                         "environment": self._environment_variables,
                     },
                 },
