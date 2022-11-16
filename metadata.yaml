@@ -14,7 +14,7 @@ resources:
   free5gc-pcf-image:
     type: oci-image
     description: OCI image for free5gc-pcf
-    upstream-source: towards5gs/free5gc-pcf:v3.2.0
+    upstream-source: ghcr.io/gruyaume/free5gc-pcf:1.1.1
 
 storage:
   pcf-volume:
